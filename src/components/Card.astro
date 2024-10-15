@@ -3,9 +3,10 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
+	img: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, img } = Astro.props;
 ---
 
 <li class="link-card">
@@ -16,6 +17,7 @@ const { href, title, body } = Astro.props;
 		</h2>
 		<p>
 			{body}
+			<img class=" aspect-auto my-5 w-full md:w-1/2 rounded-lg" src={img} alt="">
 		</p>
 	</a>
 </li>
