@@ -8,14 +8,18 @@ const posts = await getCollection('posts')
 
 <Layout title="Welcome to Nihongo Blog.">
 	<main>
+		<div class="mx-auto max-w-screen-xl">
+			<div class=" ml-14 grid gap-4 md:grid-cols-2">
 		{posts.map((posts) => (
-			<section class=" grid grid-cols-2 gap-3">
+			<section class="grid grid-cols-1">
 				<Card 
 				title={posts.data.title}
 				body={posts.data.description} 
 				href={`/${posts.slug}`}
 				img={posts.data.img} />
 			</section>
-		))}
+			))}
+			</div>
+		</div>
 	</main>
 </Layout>

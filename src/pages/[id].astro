@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('posts');
+	return posts.map((post) => ({
+		params: { id: post.slug },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props; 
+const { data } = post;
+const { title, description, img} = data;
+
+const { Content } = await render(post)
+
+---
+
+<Layout title={`${title} - Nihongo Blog`}>
+    <div class=" gap-9 md:grid md:grid-cols-2 md:grid-rows-1">
+        <aside class="h-4/5">
+            <img src={img} alt={title} class=" w-full h-full rounded" />
+        </aside>
+        
+        <main>
+            <h1 class="text-4xl font-extrabold text-justify justify-center my-5 md:grid md:grid-cols-1 sm:text-xl">{title}</h1>
+            <div>
+                <Content />
+            </div>
+        </main>
+    </div>
+</Layout>
