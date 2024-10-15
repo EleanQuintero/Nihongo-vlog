@@ -13,6 +13,7 @@ const posts = await getCollection('posts')
 		{posts.map((posts) => (
 			<section class="grid grid-cols-1">
 				<Card 
+				transition:name={`img-${posts.slug}`}
 				title={posts.data.title}
 				body={posts.data.description} 
 				href={`/${posts.slug}`}
