@@ -1,6 +1,7 @@
 ---
 title: Aprende las bases del idioma
 img: /aprender-base.webp
+img_alt: personaje de anime estudiando
 description: Primer consejo para tu aprendizaje en japonés.
 ---
 

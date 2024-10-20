@@ -12,4 +12,4 @@ Lo que principalmente me ha ayudado en mi camino de aprendizaje, son estos tres 
 
 ## 1. [Aprende las bases del japonés](./aprender-base-consejos)
 ## 2. [Inmersion y practica](./inmersion-consejos)
-## 3. Encuentra tu motivo principal
+## 3. [Encuentra tu motivo principal](./motivo-consejos)

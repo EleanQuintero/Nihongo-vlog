@@ -1,6 +1,7 @@
 ---
 title: Inmersion en el idioma, tu mejor aliado en la practica
 img: /Avatar-medita.jpg
+img_alt: Avatar aang meditando
 description: La razon de porque la inmersion es tan importante en el aprendizaje de un idioma.
 ---
 La **inmersión** es un componente fundamental para aprender japonés de manera efectiva. Al sumergirte en el idioma diariamente, no solo aceleras tu proceso de aprendizaje, sino que también adquieres una **comprensión cultural** más profunda, esencial para conectar auténticamente con los hablantes nativos.
