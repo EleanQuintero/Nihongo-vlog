@@ -1,6 +1,6 @@
-# Nihongo-vlog
+# Nihongo-Blog
 
-Bienvenido a "Nihongo-vlog", un blog dedicado a aprender japonés. Este espacio está diseñado para compartir métodos autodidactas efectivos y mucho más. Explora diferentes secciones, desde consejos prácticos hasta ejemplos interactivos, para enriquecer tu experiencia de aprendizaje.
+Bienvenido a "Nihongo-blog", un blog dedicado a aprender japonés. Este espacio está diseñado para compartir métodos autodidactas efectivos y mucho más. Explora diferentes secciones, desde consejos prácticos hasta ejemplos interactivos, para enriquecer tu experiencia de aprendizaje.
 
 ## 🚀 Estructura del Proyecto
 
@@ -24,7 +24,7 @@ Para empezar a trabajar en este proyecto, sigue estos pasos:
 
 Clona el repositorio:
 
-git clone [URL del repositorio]
+git clone
 Accede al directorio del proyecto:
 
 cd Nihongo-vlog
