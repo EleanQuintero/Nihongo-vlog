@@ -17,4 +17,13 @@ const consejos = defineCollection({
     })
 });
 
-export const collections = { posts, consejos }
+const libros = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        img: z.string(),
+        description: z.string(),
+        img_alt: z.string()
+    })
+});
+
+export const collections = { posts, consejos, libros }

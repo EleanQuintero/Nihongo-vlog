@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+	const libros = await getCollection('libros');
+	return libros.map((libros) => ({
+		params: { id: libros.slug },
+		props: { libros },
+	}));
+}
+
+const { libros} = Astro.props; 
+const { data, slug } = libros;
+const { title, description, img, img_alt} = data;
+
+const { Content } = await render(libros)
+
+---
+
+<Layout title={`${title} - Nihongo Blog`}>
+    <div class=" gap-9 md:grid md:grid-cols-2 md:grid-rows-1">
+        <aside class="h-3/6">
+            <img
+                transition:name={`img-${slug}`} 
+                src={img} 
+                alt={img_alt}
+                class=" w-full h-full rounded" />
+        </aside>
+        
+        <main>
+            <h1 class="text-4xl font-extrabold text-justify justify-center my-5 md:grid md:grid-cols-1 sm:text-xl">{title}</h1>
+            <div class="prose prose-invert">
+                <Content />
+            </div>
+        </main>
+    </div>
+</Layout>

@@ -1,0 +1,78 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+const libros = await getCollection('libros')
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Nihongo Blog by Eleqful" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ClientRouter />
+	</head>
+	<body>
+		<Header />
+		<div>
+			<slot />
+            <div class="mx-auto max-w-screen-xl">
+                <div class="ml-14 grid gap-4 md:grid-cols-2">
+            {libros.map((libro) => (
+                <section class="grid grid-cols-1">
+                    <Card 
+                    transition:name={`img-${libro.slug}`}
+                    title={libro.data.title}
+                    body={libro.data.description} 
+                    href={`/${libro.slug}-book`}
+                    img={libro.data.img} />
+                </section>
+                ))}
+                </div>
+            </div>
+                </div>
+            </div>
+		</div>
+		<Footer />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif system-ui, -apple-system;
+		background: #13151a;
+		color: #fff;
+	}
+
+	body {
+		@apply grid place-content-center p-10;
+	}
+	body > div {
+		@apply container;
+	}
+
+	body a {
+	 @apply no-underline
+	}
+</style>
