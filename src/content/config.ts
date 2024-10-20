@@ -8,4 +8,12 @@ const posts = defineCollection({
     })
 });
 
-export const collections = { posts }
+const consejos = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        img: z.string(),
+        description: z.string(),
+    })
+});
+
+export const collections = { posts, consejos }

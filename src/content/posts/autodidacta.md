@@ -1,6 +1,6 @@
 ---
 title: El Metodo Autodidacta 
-img: ../public/japones-autodic.webp
+img: /japones-autodic.webp
 description: Iniciate en el mundo del idioma japonés por tu propia cuenta. 
 ---
 
@@ -18,6 +18,6 @@ Entre estos recursos, destacan:
 
 Si bien es cierto que **aprender japonés de forma autodidacta puede ser un poco más complicado**, también te ofrece grandes beneficios. Desarrollarás tu capacidad de estudio independiente y, además, crearás una red de recursos a tu favor, como este blog.
 
-Mi mayor aprendizaje como autodidacta ha sido la **constancia**, **la dedicación** y la **organización** al estudiar cada tema. Aprender a aprovechar cada recurso a mi alcance me ha permitido obtener el máximo conocimiento de ellos, y al mismo tiempo, profundizar en este maravilloso idioma.
+Mi mayor aprendizaje como autodidacta ha sido la **constancia**, **la dedicación** y la **organización** al estudiar cada tema. Aprender a aprovechar cada recurso a mi alcance me ha permitido obtener el máximo conocimiento de ellos, y al mismo tiempo, profundizar en este maravilloso idioma. Este es el primer consejo que te doy en este blog.
 
-Este es el primer consejo que te doy en este blog: **al final de cada artículo, encontrarás una recomendación de recursos que puedes utilizar para aprender japonés** y consejos sobre cómo sacarles el máximo provecho. 
+**En esta web encontrarás un articulo con recomendaciónes de recursos que puedes utilizar para aprender japonés** y consejos sobre cómo sacarles el máximo provecho. 
