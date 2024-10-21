@@ -22,7 +22,8 @@ const libros = defineCollection({
         title: z.string(),
         img: z.string(),
         description: z.string(),
-        img_alt: z.string()
+        img_alt: z.string(),
+        link: z.string().url()
     })
 });
 

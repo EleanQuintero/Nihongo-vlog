@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 const { libros} = Astro.props; 
 const { data, slug } = libros;
-const { title, description, img, img_alt} = data;
+const { title, description, img, img_alt, link} = data;
 
 const { Content } = await render(libros)
 
@@ -25,7 +25,7 @@ const { Content } = await render(libros)
                 transition:name={`img-${slug}`} 
                 src={img} 
                 alt={img_alt}
-                class=" w-full h-full rounded" />
+                class=" w-full h-full md:h-screen  rounded-lg" />
         </aside>
         
         <main>
