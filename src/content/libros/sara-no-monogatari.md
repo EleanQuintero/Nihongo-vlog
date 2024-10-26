@@ -2,7 +2,7 @@
 title: Sara no Monogatari, 13 años en Japón
 img: /sara-no-monogatari.webp
 img_alt: Libro Sara no monogatari 13 años en japon.
-description: Los aprendizajes y vivencias de Sara Perez durante su vida en japon
+description: Los aprendizajes y vivencias de Sara Perez durante su vida en japon en un excelente libro.
 link: https://www.amazon.es/Sara-Monogatari-13-a%C3%B1os-Jap%C3%B3n/dp/B0CJXDSK1F/ref=sr_1_1?crid=32YVK2HHUJN89&dib=eyJ2IjoiMSJ9.KMbQubNAM6wLhZ0nJk1Ctqt22VKqdVGpMikaeDfEFZzGjHj071QN20LucGBJIEps.aXfNDwrOWIESThq0NKuDwceiinkXgf4Bo7I_nzCNZFI&dib_tag=se&keywords=sara+no+monogatari&qid=1729636803&sprefix=sara+no+mono%2Caps%2C939&sr=8-1
 ---
 Con tan solo 19 años, Sara emprende la que será la aventura de su vida: irse a vivir a Japón. Desde su etapa de estudiante de japonés y sus primeros trabajos a tiempo parcial, hasta su etapa universitaria y su primera experiencia laboral seria, Sara nos cuenta su experiencia de adaptación a la vida en un país totalmente antagónico a España

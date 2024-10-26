@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
+import BookCard from '../components/BookCard.astro';
 interface Props {
 	title: string;
 }
@@ -31,7 +32,7 @@ const libros = await getCollection('libros')
                 <div class="ml-14 grid gap-4 md:grid-cols-2">
             {libros.map((libro) => (
                 <section class="grid grid-cols-1">
-                    <Card 
+                    <BookCard 
                     transition:name={`img-${libro.slug}`}
                     title={libro.data.title}
                     body={libro.data.description} 
