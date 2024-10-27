@@ -6,7 +6,7 @@ const posts = defineCollection({
         img: z.string(),
         description: z.string(),
     })
-});
+})
 
 const consejos = defineCollection({
     schema: z.object({
@@ -15,7 +15,7 @@ const consejos = defineCollection({
         description: z.string(),
         img_alt: z.string()
     })
-});
+})
 
 const libros = defineCollection({
     schema: z.object({
@@ -25,6 +25,14 @@ const libros = defineCollection({
         img_alt: z.string(),
         link: z.string()
     })
+})
+
+const about = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        img: z.string(),
+        img_alt: z.string(),
+    })
 });
 
-export const collections = { posts, consejos, libros }
+export const collections = { posts, consejos, libros, about }
