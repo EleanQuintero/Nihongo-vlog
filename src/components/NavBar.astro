@@ -1,9 +1,10 @@
+---
+import { URL_SECTIONS } from "../utils/utils";
+---
+
 <nav class="hidden  sm:flex  sm:gap-8 sm:items-center sm:py-4 sm:px-4 sm:mx-auto sm:max-w-screen-lg lg:py-10 lg:px-6">
     <div class="flex gap-6 items-center">
-        <a href="/" class="text-2xl font-bold text-white">Inicio</a>
-        <a href="/autodidacta" class="text-2xl font-bold text-white">Autodidacta</a>
-        <a href="/books-recom" class="text-2xl font-bold text-white">Libros recomendados</a>
-        <a href="/cursos" class="text-2xl font-bold text-white">Cursos</a>
-        <a href="/consejos" class="text-2xl font-bold text-white">Consejos</a>
-        <a href="/nihongo-blog-about" class="text-2xl font-bold text-white">About</a>
+            {Object.values(URL_SECTIONS).map((section) => (
+                <a href={section.url} class="text-2xl font-bold text-white">{section.title}</a>
+            ))}
     </div>

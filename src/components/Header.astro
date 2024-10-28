@@ -1,6 +1,7 @@
----
+--- 
 import MenuIcon from "../icons/MenuIcon.astro";
 import NavBar from "./NavBar.astro";
+import MobileNavBar from "./MobileNavBar.astro";
 
 
 ---
@@ -12,7 +13,10 @@ import NavBar from "./NavBar.astro";
                 Nihongo Blog by Eleqful
             </h2>
             <div class="flex sm:hidden  " >
-                <MenuIcon/>
+                <input type="checkbox" id="menu-toggle" class="hidden" />
+                        <MenuIcon/>
+                    </label>
+                    <MobileNavBar/>
             </div>
         </div>
         <p class=" my-4 font-light text-gray-500 sm:text-xl dark:text-gray-400">
@@ -20,4 +24,25 @@ import NavBar from "./NavBar.astro";
         </p>
         <NavBar />
     </div>
-</header>
+</header> 
+
+<style is:global>
+
+#menu-toggle:checked ~ #mobile-navbar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+	align-content: center;
+	justify-items: center;
+}
+
+#menu-toggle:checked ~ #menu-icon{
+    display: none;
+}
+</style>

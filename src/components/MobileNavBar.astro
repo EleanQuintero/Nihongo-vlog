@@ -1,0 +1,17 @@
+---
+import MenuIcon from "../icons/MenuIcon.astro";
+import { URL_SECTIONS } from "../utils/utils";
+---
+
+<div id="mobile-navbar" class="hidden" >
+    <div class="flex gap-6 justify-end">
+        <MenuIcon/>
+    </div>
+    <ul class=" flex flex-col gap-10 items-center"></ul>
+        {Object.values(URL_SECTIONS).map((section) => (
+            <li class=" list-none my-2 text-center">
+                <a href={section.url} class="text-xl font-bold text-white">{section.title}</a>
+            </li>
+        ))}
+    </ul>
+</div>
