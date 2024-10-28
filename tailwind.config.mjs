@@ -6,8 +6,11 @@ export default {
 		extend: {
 			height: {
 				'h-custom': '660px', // añade una altura personalizada
-			  }
-		},
+			  },
+			screens: { 
+				'xs': '350px'
+			}
+		}
 	},
 	plugins: [typography],
 }
