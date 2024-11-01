@@ -5,6 +5,6 @@ import { URL_SECTIONS } from "../utils/utils";
 <nav class="hidden  sm:flex  sm:gap-8 sm:items-center sm:py-4 sm:px-4 sm:mx-auto sm:max-w-screen-lg lg:py-10 lg:px-6">
     <div class="flex gap-6 items-center">
             {Object.values(URL_SECTIONS).map((section) => (
-                <a href={section.url} class="text-2xl font-bold text-white">{section.title}</a>
+                <a href={section.url} class=" hover:scale-105 transition-all duration-300 text-2xl font-bold text-white">{section.title}</a>
             ))}
     </div>
