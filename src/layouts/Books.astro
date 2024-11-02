@@ -26,10 +26,8 @@ const libros = await getCollection('libros')
 	</head>
 	<body class="bg-gradient-to-r from-slate-900 to-slate-700">
 		<Header />
-		<div>
-			<slot />
-            <div class="mx-auto max-w-screen-xl">
-                <div class="ml-14 grid gap-4 md:grid-cols-2">
+		<div class="mx-auto max-w-screen-xl" >
+            <div class=" items-center grid gap-4 md:grid-cols-2">
             {libros.map((libro) => (
                 <section class="grid grid-cols-1">
                     <BookCard 
@@ -41,7 +39,6 @@ const libros = await getCollection('libros')
                 </section>
                 ))}
                 </div>
-            </div>
                 </div>
             </div>
 		</div>
