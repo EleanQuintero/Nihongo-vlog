@@ -19,8 +19,8 @@ const { Content } = await render(consejo)
 ---
 
 <Layout title={`${title} - Nihongo Blog`}>
-    <div class=" gap-9 md:grid md:grid-cols-2 md:grid-rows-1">
-        <aside class="h-3/6">
+    <div class=" justify-center md:gap-9 grid md:grid-cols-2 md:grid-rows-1">
+        <aside class="sm:h-3/6">
             <img
                 transition:name={`img-${slug}`} 
                 src={img} 
@@ -29,7 +29,7 @@ const { Content } = await render(consejo)
         </aside>
         
         <main>
-            <h1 class="text-4xl font-extrabold text-justify justify-center my-5 md:grid md:grid-cols-1 sm:text-xl">{title}</h1>
+            <h1 class="text-2xl font-extrabold text-justify justify-center my-5 md:text-3xl">{title}</h1>
             <div class="prose prose-invert">
                 <Content />
             </div>

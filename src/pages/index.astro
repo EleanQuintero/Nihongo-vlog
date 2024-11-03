@@ -8,10 +8,9 @@ const posts = await getCollection('posts')
 
 <Layout title="Welcome to Nihongo Blog.">
 	<main>
-		<div class="mx-auto max-w-screen-xl">
-			<div class=" ml-14 grid gap-4 md:grid-cols-2">
+			<div class=" ml-7 mx-auto max-w-screen-xl m-auto gap-2 grid grid-cols-1 md:ml-28 md:grid-cols-2 md:grid-rows-2">
 		{posts.map((posts) => (
-			<section class="grid grid-cols-1">
+			<section class=" w-w-custom md:w-full md:m-auto">
 				<Card 
 				transition:name={`img-${posts.slug}`}
 				title={posts.data.title}
@@ -21,6 +20,5 @@ const posts = await getCollection('posts')
 			</section>
 			))}
 			</div>
-		</div>
 	</main>
 </Layout>

@@ -9,8 +9,11 @@ export default {
 			  },
 			screens: { 
 				'xs': '350px'
-			}
+			},
+			width: {
+				'w-custom': '22rem',
 		}
+	}
 	},
 	plugins: [typography],
 }

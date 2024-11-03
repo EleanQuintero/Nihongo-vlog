@@ -9,7 +9,7 @@ interface Props {
 const { href, title, body, img } = Astro.props;
 ---
 
-<li class="w-3/5 link-card transition hover:scale-110">
+<li class="link-card transition hover:scale-110">
 	<a href={href}>
 		<h2>
 			{title}
@@ -17,7 +17,7 @@ const { href, title, body, img } = Astro.props;
 		<p>
 			{body}
 		</p>
-		<img class="aspect-auto my-5 w-full rounded-lg" 
+		<img class=" w-64 aspect-auto my-5 md:w-full rounded-lg" 
 			 src={img} 
 			 alt={title}>
 	</a>

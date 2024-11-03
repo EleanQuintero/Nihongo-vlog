@@ -1,5 +1,5 @@
 ---
-title: Tu ancla y guia en el aprendizaje de japones; el motivo
+title: Tu ancla en el aprendizaje de japones; un motivo
 img: /japam.webp	
 description: Por que es importante tener un motivo para aprender japonés.
 img_alt: Foto de Yu Kato en Unsplash.com

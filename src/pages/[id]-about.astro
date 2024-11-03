@@ -19,17 +19,17 @@ const { Content } = await render(about)
 ---
 
 <Layout title={`${title} - Nihongo Blog`}>
-    <div class=" justify-center md:grid md:grid-cols-2 md:grid-rows-1" >
-        <aside class="sm:h-3/6">
+    <div class=" justify-center grid md:grid-cols-2 md:grid-rows-1" >
+        <aside class="">
             <img 
             transition:name={`img-${slug}`} 
             src={img} 
             alt={img_alt}
-            class=" sm:mx-40 aspect-auto my-5 sm:w-3/5 md:w-3/5 rounded-lg">
+            class=" sm:mx-40 aspect-auto my-5 md:w-3/5 rounded-lg">
         </aside>
         
         <main  > 
-            <h1 class="text-2xl font-extrabold text-justify justify-center my-5 md:grid md:grid-cols-1 sm:text-4xl">{title}</h1>
+            <h1 class="text-2xl font-extrabold justify-center my-5 md:grid md:grid-cols-1 sm:text-4xl">{title}</h1>
             <div class="prose prose-invert">
                 <Content />
             </div>
