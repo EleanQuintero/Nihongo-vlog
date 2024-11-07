@@ -2,6 +2,8 @@
 import MenuIcon from "../icons/MenuIcon.astro";
 import NavBar from "./NavBar.astro";
 import MobileNavBar from "./MobileNavBar.astro";
+import 'animate.css';
+
 
 
 ---
@@ -39,7 +41,12 @@ import MobileNavBar from "./MobileNavBar.astro";
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
 	align-content: center;
-	justify-items: center;
+	justify-items: center; 
+    animation: fadeInRight;
+    animation-duration: 0.5s;
+
+
+    
 }
 
 #menu-toggle:checked ~ #menu-icon{
