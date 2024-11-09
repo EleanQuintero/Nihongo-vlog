@@ -1,6 +1,6 @@
 ---
 title: Cursos de Japonés
-img: ../public/japanese-classroom2.webp
+img: /japanese-classroom2.webp
 description: Explora oportunidades atractivas para aprender japonés.
 ---
 

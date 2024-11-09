@@ -1,7 +1,7 @@
 ---
 shortTitle: Sakigake
 title: Sakigake, las mejores experiencias sobre Japón en Madrid
-img: ../public/sakigake-madrid.webp
+img: /sakigake-madrid.webp
 description: Aprende japonés mientras conoces nativos y te diviertes con amantes del idioma, a la vez que aportas aprendizajes a japoneses que aprenden español.
 link: https://www.instagram.com/sakigakejapon
 plataform: instagram

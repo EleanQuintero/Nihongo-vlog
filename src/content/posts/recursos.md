@@ -1,6 +1,6 @@
 ---
 title: Recursos de valor en tu aprendizaje de japonés
-img: ../public/recursosjapones.webp
+img: /recursosjapones.webp
 description: Estos recursos llevarán tu experiencia de aprendizaje a otro nivel.
 ---
 
