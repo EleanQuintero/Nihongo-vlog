@@ -19,8 +19,8 @@ const { Content } = await render(libros)
 ---
 
 <Layout title={`${title} - Nihongo Blog`}>
-    <div class=" gap-9 md:grid md:grid-cols-2 md:grid-rows-1">
-        <aside class="h-3/6">
+    <div class=" gap-4 md:grid md:grid-cols-2 md:grid-rows-1">
+        <aside >
             <img
                 transition:name={`img-${slug}`} 
                 src={img} 
@@ -29,7 +29,7 @@ const { Content } = await render(libros)
         </aside>
         
         <main>
-            <h1 class="text-4xl font-extrabold text-justify justify-center my-5 md:grid md:grid-cols-1 sm:text-xl">{title}</h1>
+            <h1 class="text-2xl font-extrabold text-justify justify-center my-5 md:grid md:grid-cols-1 sm:text-xl">{title}</h1>
             <div class="prose prose-invert">
                 <Content />
                 <a href={link} target="_blank" class=" no-underline inline-block px-6 py-3 bg-slate-500 text-white font-semibold rounded-lg shadow-md hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">

@@ -22,5 +22,9 @@ export const URL_SECTIONS ={
     About: {
         title: "About",
         url: "/nihongo-blog-about"
+    },
+    Recursos: {
+        title: "Recursos",
+        url: "/recursos"
     }
 }

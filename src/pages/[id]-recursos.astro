@@ -1,0 +1,41 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+
+export async function getStaticPaths() {
+	const recursos = await getCollection('recursos');
+	return recursos.map((recursos) => ({
+		params: { id: recursos.slug },
+		props: { recursos },
+	}));
+}
+
+const { recursos } = Astro.props;
+const { data, slug } = recursos
+const { title, img, link, plataform,shortTitle} = data
+
+const { Content } = await render(recursos)
+---
+
+<Layout title={`${title} - Nihongo Blog`}>
+    <div class=" justify-center grid md:grid-cols-2 md:grid-rows-1" >
+        <aside class="">
+            <img 
+            transition:name={`img-${slug}`} 
+            src={img}
+            class=" sm:mx-40 aspect-auto my-5 md:w-3/5 rounded-lg">
+        </aside>
+        
+        <main  > 
+            <h1 class="text-2xl font-extrabold justify-center my-5 md:grid md:grid-cols-1 sm:text-4xl">{title}</h1>
+            <div class="prose prose-invert">
+                <Content />
+                <a href={link} target="_blank" class=" no-underline inline-block px-6 py-3 bg-slate-500 text-white font-semibold rounded-lg shadow-md hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                    Pagina de {shortTitle} en {plataform} 📸
+                  </a>
+            </div>
+        </main>
+
+    </div>
+</Layout>

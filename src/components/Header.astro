@@ -2,54 +2,72 @@
 import MenuIcon from "../icons/MenuIcon.astro";
 import NavBar from "./NavBar.astro";
 import MobileNavBar from "./MobileNavBar.astro";
-import 'animate.css';
-
-
 
 ---
 
 <header class="px-4 mx-auto max-w-screen-lg lg:py-10 lg:px-6">
     <div class="mx-auto text-center nb-8 lg:nb-16">
-        <div class=" inline-flex items-center" >
-            <h2 class=" nb-4 mr-7 text-xl sm:text-5xl tracking-tight font-extrabold text-white">
+        <div class="inline-flex items-center">
+            <h2 class="nb-4 mr-7 text-4xl sm:text-5xl tracking-tight font-extrabold text-white">
                 Nihongo Blog
             </h2>
-            <div class="flex sm:hidden  " >
+            <div class="flex sm:hidden">
+                <label for="menu-toggle" class="sr-only">Abrir menú</label>
                 <input type="checkbox" id="menu-toggle" class="hidden" />
-                        <MenuIcon/>
-                    </label>
-                    <MobileNavBar/>
+                <MenuIcon />
+                <MobileNavBar />
             </div>
         </div>
-        <p class=" my-4 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+        <p class=" text-xl my-4 font-light text-gray-500 sm:text-xl dark:text-gray-400">
             Todo lo que necesitas saber para empezar tu ruta de aprendizaje de japones!
         </p>
         <NavBar />
     </div>
-</header> 
+</header>
 
 <style is:global>
 
-#menu-toggle:checked ~ #mobile-navbar{
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+#menu-toggle:checked ~ #mobile-navbar {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 0;
     right: 0;
-    width: 35%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
-	align-content: center;
-	justify-items: center; 
-    animation: fadeInRight;
-    animation-duration: 0.5s;
-
-
-    
+    animation: fadeIn 0.5s forwards;
 }
 
-#menu-toggle:checked ~ #menu-icon{
+#menu-toggle:not(:checked) ~ #mobile-navbar {
+    animation: fadeOut 0.5s forwards;
+}
+
+#menu-toggle:checked ~ #menu-icon {
     display: none;
 }
 </style>

@@ -35,4 +35,15 @@ const about = defineCollection({
     })
 });
 
-export const collections = { posts, consejos, libros, about }
+const recursos = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        shortTitle: z.string(),
+        img: z.string(),
+        description: z.string(),
+        link: z.string(),
+        plataform: z.string()
+    })
+})  
+
+export const collections = { posts, consejos, libros, about, recursos }

@@ -8,7 +8,7 @@ const posts = await getCollection('posts')
 
 <Layout title="Welcome to Nihongo Blog.">
 	<main>
-			<div class=" ml-7 mx-auto max-w-screen-xl m-auto gap-2 grid grid-cols-1 md:ml-28 md:grid-cols-2 md:grid-rows-2">
+			<div class=" ml-7 mx-auto max-w-screen-xl gap-2 grid grid-cols-1 md:ml-28 md:grid-cols-2 md:grid-rows-2">
 		{posts.map((posts) => (
 			<section class=" w-w-custom md:w-full md:m-auto">
 				<Card 

@@ -1,11 +1,11 @@
 ---
 title: Tu ancla en el aprendizaje de japones; un motivo
-img: /japam.webp	
+img: /akihabara-tokyo.webp	
 description: Por que es importante tener un motivo para aprender japonés.
-img_alt: Foto de Yu Kato en Unsplash.com
+img_alt: Foto de akihabara, tokyo
   
 ---
-**Por qué es importante tener un motivo para aprender japonés**
+**¿Por qué es importante tener un motivo para aprender japonés?**
 Aprender japonés no es una tarea sencilla. Requiere dedicación, tiempo y esfuerzo. Sin embargo, existe una herramienta fundamental que te ayudará a mantener el rumbo: **tu motivo personal**.
 
 **La importancia del motivo**

@@ -10,6 +10,6 @@ Tras casi dos años de estudiar japonés, he aprendido mucho sobre el idioma y c
 
 Lo que principalmente me ha ayudado en mi camino de aprendizaje, son estos tres consejos: 
 
-## 1. [Aprende las bases del japonés](./aprender-base-consejos)
-## 2. [Inmersion y practica](./inmersion-consejos)
-## 3. [Encuentra tu motivo principal](./motivo-consejos)
+## [Aprende las bases del japonés](./aprender-base-consejos)
+## [Inmersion y practica](./inmersion-consejos)
+## [Encuentra tu motivo principal](./motivo-consejos)
