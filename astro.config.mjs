@@ -13,5 +13,11 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   integrations: [tailwind()],
   output:'static',
-  adapter: vercel(),
+  adapter: vercel(
+    {
+      webAnalytics: {
+        enabled: true,
+      },
+    }
+  ),
 });
